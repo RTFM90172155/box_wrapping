@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Box Wrapping</title>
+  </head>
+  <body>
+    <center>
+      <h1>Box Wrapping</h1>
+      <div id="filesInputBox">
+        <div id="wrappingsInputBox">
+          <label for="wrappingsInput" id="wrappingsInputLabel" title="포장지 선택">
+            <p>포장지 선택</p>
+            <p>선택된 파일: <span id="wrappingsSelected">없음</span></p>
+            <input type="file" accept="image/*" id="wrappingsInput" title="포장지 선택"/>
+          </label>
+        </div>
+        <div id="contentsInputBox">
+          <label for="contentsInput" id="contentsInputLabel" title="내용물 선택">
+            <p>내용물 선택</p>
+            <p>선택된 파일: <span id="contentsSelected">없음</span></p>
+            <input type="file" accept="*" id="contentsInput" title="내용물 선택"/>
+          </label>
+        </div>
+      </div>
+      <div id="downloadBox">
+        <button id="downloadButton" title="포장하기">포장하기</button>
+      </div>
+    </center>
+    <div id="copyright">developed by @RTFM</div>
+    <div id="github"><a href="https://github.com/RTFM90172155/box_wrapping">GitHub</a></div>
+  </body>
+</html>
